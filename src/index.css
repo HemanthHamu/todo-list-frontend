@@ -71,5 +71,10 @@ body{
 @media (max-width:768px) {
   body{
     width: 100%;
+    background-color: #171616;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    height: 100vh;
   }
 }
