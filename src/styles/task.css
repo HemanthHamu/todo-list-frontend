@@ -1,0 +1,41 @@
+.task{
+    width: 100%;
+}
+.single-task-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+.single-task-container .timestamp{
+    position: absolute;
+    right: 300px;
+}
+.update-btn,.edit-btn,.delete-btn{
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+.update-btn{
+    background-color: green;
+}
+.edit-btn{
+    background-color: blue;
+    position: absolute;
+    right: 100px;
+}
+.delete-btn{
+    background-color: red;
+}
+@media (max-width:768px) {
+    .single-task-container .timestamp{
+       position: absolute;
+       right: 120px;
+    }
+}

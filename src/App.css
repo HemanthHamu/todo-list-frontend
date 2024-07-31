@@ -1,0 +1,55 @@
+/* src/App.css */
+
+.app {
+  text-align: center;
+  padding: 50px;
+  background-color: #171616;
+  width: 700px;
+  border-radius: 10px;
+  margin: auto;
+  box-shadow: 0 0 2px grey;
+}
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+.task.done {
+  text-decoration: line-through;
+  color: red;
+  font-weight: bolder;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+input[type="text"] {
+  padding: 15px;
+  margin: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 100px;
+  font-size: 15px;
+  color: #fff;
+  outline: none;
+  border: 1px solid grey;
+}
+::placeholder{
+  color: grey;
+}
+
+@media (max-width:768px) {
+  .app{
+    width: 100%;
+    padding: 30px;
+    margin-left: 0px;
+    font-size: 13px;
+  }
+}
