@@ -7,3 +7,8 @@
     font-size: 25px;
     font-weight: bolder;
 }
+@media (max-width:768px) {
+    .footer-container p{
+        color: #fff;
+    }
+}

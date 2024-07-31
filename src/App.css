@@ -9,6 +9,9 @@
   margin: auto;
   box-shadow: 0 0 2px grey;
 }
+.app h1{
+  color: #fff;
+}
 .task {
   display: flex;
   justify-content: space-between;
