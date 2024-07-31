@@ -47,7 +47,7 @@ input[type="text"] {
 
 @media (max-width:768px) {
   .app{
-    width: 100%;
+    width: 400px;
     padding: 30px;
     margin-left: 0px;
     font-size: 13px;

@@ -7,7 +7,7 @@ function SearchBar({ searchText, onSearch }) {
       type="text"
       value={searchText}
       onChange={(e) => onSearch(e.target.value)}
-      placeholder="Search tasks"
+      placeholder="Search tasks..."
       className='search-tasks'
     />
   );

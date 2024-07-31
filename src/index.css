@@ -62,12 +62,11 @@ button:focus-visible {
 }
 body{
   font-family:"Roboto",sans-serif ;
-  display: flex;
+  /* display: flex;
   place-items: center;
   justify-content: center;
   height: 100vh;
-  width: 70%;
-  margin: auto;
+  width: 70%; */
 }
 @media (max-width:768px) {
   body{

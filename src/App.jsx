@@ -4,13 +4,13 @@ import TaskForm from './components/TaskForm';
 import SearchBar from './components/SearchBar';
 import './App.css';
 import toast, { Toaster } from 'react-hot-toast';
+import Footer from './components/Footer';
 
 const API_URL = 'https://todo-list-backend-hvyo.onrender.com/tasks';
 
 function App() {
   const [tasks, setTasks] = useState([]);
   const [searchText, setSearchText] = useState('');
-
   useEffect(() => {
     const fetchTasks = async () => {
       try {
@@ -81,7 +81,6 @@ function App() {
       });
       const updatedTask = await response.json();
       setTasks(tasks.map(task => (task._id === id ? updatedTask : task)));
-      gsap.fromTo(`.task-${id}`, { opacity: 0.5 }, { opacity: 1, duration: 0.5 });
     } catch (err) {
       console.error(err);
     }
@@ -90,13 +89,16 @@ function App() {
   const filteredTasks = tasks.filter(task => task.text.toLowerCase().includes(searchText.toLowerCase()));
 
   return (
+    <>
     <div className="app">
       <h1>Todo List</h1>
       <SearchBar searchText={searchText} onSearch={setSearchText} />
       <TaskForm onAdd={addTask} />
-      <TaskList tasks={filteredTasks} onUpdate={updateTask} onDelete={deleteTask} onToggle={toggleTask} />
+      <TaskList tasks={filteredTasks} onUpdate={updateTask} onDelete={deleteTask} onToggle={toggleTask}  />
+      <Footer totalTodos={tasks}/>
       <Toaster />
     </div>
+    </>
   );
 }
 

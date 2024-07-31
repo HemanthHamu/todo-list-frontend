@@ -34,8 +34,26 @@
     background-color: red;
 }
 @media (max-width:768px) {
+    .single-task-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      justify-content: space-between;
+    }
     .single-task-container .timestamp{
-       position: absolute;
-       right: 120px;
+        position: absolute;
+        right: 150px;
+    }
+    .single-task-container .edit-btn{
+        position: absolute;
+        right: 80px;
+    }
+    .single-task-container .delete-btn{
+        position: absolute;
+        right: 20px;
+    }
+    .update-btn,.delete-btn,.edit-btn{
+        font-size: 10px;
     }
 }

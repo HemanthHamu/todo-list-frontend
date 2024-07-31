@@ -26,7 +26,9 @@ function Task({ task, onUpdate, onDelete, onToggle }) {
           <span onClick={() => onToggle(task._id)}>{task.text}</span>
           <span className="timestamp">{new Date(task.timestamp).toLocaleString()}</span>
           <button className='edit-btn' onClick={() => setIsEditing(true)}>Edit</button>
-          <button className='delete-btn' onClick={() => onDelete(task._id)}>Delete</button>
+          <button className='delete-btn' onClick={() => onDelete(task._id)}>
+            Delete
+          </button>
         </div>   
       )}
     </div>
