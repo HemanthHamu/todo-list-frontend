@@ -5,7 +5,7 @@ import SearchBar from './components/SearchBar';
 import './App.css';
 import toast, { Toaster } from 'react-hot-toast';
 
-const API_URL = 'http://localhost:5000/tasks';
+const API_URL = 'https://todo-list-backend-hvyo.onrender.com/tasks';
 
 function App() {
   const [tasks, setTasks] = useState([]);
