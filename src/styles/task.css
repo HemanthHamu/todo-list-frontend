@@ -63,4 +63,8 @@
         border: none;
         color: #fff;
     }
+    input{
+        background-color: #171616;
+        color: #fff;
+    }
 }
