@@ -7,4 +7,4 @@
 
 4.If user clicks on "edit" button "updateTask" function will be called and it is responsible for updating the existing todo. If user changes the existing todo and clicks on "update" button a put request will be made to this route "http://localhost:5000/tasks/${id}" here "id" is the path parameter which is unique for every todo.
 
-5. If user clicks on "delete" button a delete request will be made to this route "http://localhost:5000/tasks/${id}" here "id" is the path parameter which is unique for every todo.
+5.If user clicks on "delete" button a delete request will be made to this route "http://localhost:5000/tasks/${id}" here "id" is the path parameter which is unique for every todo.
